@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Dice from "./Dice";
 import BettingOptions from "./BettingOptions";
-import "./App.css"; // Import your CSS file with the animation styles
-
+import "./App.css";
 const rollDice = () => Math.floor(Math.random() * 6) + 1;
 
 const calculateOutcome = (diceValues, bet) => {
   const total = diceValues.reduce((a, b) => a + b, 0);
-  const uniqueValues = new Set(diceValues);
+  // const uniqueValues = new Set(diceValues);
 
   if (!bet) return "No Bet";
   if (bet === "Small" && total >= 4 && total <= 10) return "You win!";
