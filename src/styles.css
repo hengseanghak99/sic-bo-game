@@ -1,0 +1,19 @@
+/* Define keyframes for the rotation */
+@keyframes rotate360 {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Apply the animation to an element */
+  .element-to-rotate {
+    display: inline-block; /* Ensures inline elements rotate correctly */
+    -webkit-animation: rotate360 1s linear infinite; /* Apply animation */
+    animation: rotate360 0.5s linear infinite; /* Standard syntax */
+  }
+  
