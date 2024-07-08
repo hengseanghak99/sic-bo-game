@@ -20,7 +20,7 @@ const Dice = ({ value }) => {
 
   return (
     <img
-      className="inline-block h-24 w-24 rounded-2xl object-cover object-center"
+      className="inline-block h-20 w-20 rounded-2xl object-cover object-center"
       alt={`Dice showing ${value}`}
       src={imageDice}
     />
